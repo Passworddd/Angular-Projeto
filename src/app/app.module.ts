@@ -7,18 +7,35 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 // Cabeçalho
 import { HeaderComponent } from './components/template/header/header.component';
+// Roda Pé
+import { FooterComponent } from './components/template/footer/footer.component';
+// Área de Navegação
+import { NavComponent } from './components/template/nav/nav.component';
+
+// Biblioteca Material
+import { MatToolbarModule } from '@angular/material/toolbar';
+
+import { MatSidenavModule } from '@angular/material/sidenav';
+import { MatListModule } from '@angular/material/list';
+
+
 
 @NgModule({
   declarations: [
     AppComponent, 
-    HeaderComponent
+    HeaderComponent, 
+    FooterComponent, 
+    NavComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule, 
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    MatToolbarModule,
+    MatSidenavModule,
+    MatListModule
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {}
