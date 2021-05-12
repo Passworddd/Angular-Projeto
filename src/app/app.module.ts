@@ -14,9 +14,20 @@ import { NavComponent } from './components/template/nav/nav.component';
 
 // Biblioteca Material
 import { MatToolbarModule } from '@angular/material/toolbar';
-
+import { MatCardModule } from '@angular/material/card';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatListModule } from '@angular/material/list';
+import { MatButtonModule } from '@angular/material/button'
+import { MatSnackBarModule } from '@angular/material/snack-bar'
+// Diretivas
+import { RedDirective } from './directived/red.directive';
+import { ForDirective } from './directived/for.directive';
+import { ProductReadComponent } from './components/product-read/product-read.component';
+import { HomeComponent } from './views/home/home.component';
+import { ProductCreatComponent } from './components/product-creat/product-creat.component';
+// Observer
+import { HttpClientModule } from '@angular/common/http'
+
 
 
 
@@ -25,7 +36,8 @@ import { MatListModule } from '@angular/material/list';
     AppComponent, 
     HeaderComponent, 
     FooterComponent, 
-    NavComponent
+    NavComponent, 
+    RedDirective, ForDirective, ProductReadComponent, HomeComponent, ProductCreatComponent
   ],
   imports: [
     BrowserModule,
@@ -33,7 +45,11 @@ import { MatListModule } from '@angular/material/list';
     BrowserAnimationsModule,
     MatToolbarModule,
     MatSidenavModule,
-    MatListModule
+    MatListModule,
+    MatCardModule,
+    MatButtonModule,
+    MatSnackBarModule,
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

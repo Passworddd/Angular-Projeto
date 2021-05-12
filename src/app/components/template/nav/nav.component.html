@@ -4,20 +4,23 @@
    opened 
    fixedInViewport="true"
    fixedTopGap="64">
-
        <mat-nav-list class="nav-list">
-         <a href="#" mat-list-item>
-          <i class="material-icons">
-            home
-          </i>
+          <a href="#" mat-list-item routerLink='/'>
+            <i class="material-icons">
+              home
+            </i>
           Início
          </a>
-        <a href="#">
-          <i class="material-icons">
-            storefront
-          </i>
+           <a href="#" routerLink='/products'>
+            <i class="material-icons">
+              storefront
+            </i>
           Loja
         </a>
        </mat-nav-list>
-   </mat-sidenav>   
+   </mat-sidenav>
+
+   <mat-sidenav-content class="content">
+     <router-outlet></router-outlet>
+   </mat-sidenav-content>
 </mat-sidenav-container>
