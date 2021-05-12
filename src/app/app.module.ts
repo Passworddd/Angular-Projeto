@@ -19,6 +19,9 @@ import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatListModule } from '@angular/material/list';
 import { MatButtonModule } from '@angular/material/button'
 import { MatSnackBarModule } from '@angular/material/snack-bar'
+import { FormsModule } from '@angular/forms'
+import { MatFormField, MatFormFieldModule } from '@angular/material/form-field'
+import { MatInputModule } from '@angular/material/input'
 // Diretivas
 import { RedDirective } from './directived/red.directive';
 import { ForDirective } from './directived/for.directive';
@@ -50,6 +53,9 @@ import { HttpClientModule } from '@angular/common/http'
     MatButtonModule,
     MatSnackBarModule,
     HttpClientModule,
+    FormsModule,
+    MatFormFieldModule,
+    MatInputModule
   ],
   providers: [],
   bootstrap: [AppComponent]
