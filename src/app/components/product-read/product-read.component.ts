@@ -18,5 +18,8 @@ export class ProductReadComponent implements OnInit {
   navigateToProductCreate():void {
     this.router.navigate(['/criarp']);
   }
+  navigateToProductLista():void {
+    this.router.navigate(['/lista']);
+  }
 
 }

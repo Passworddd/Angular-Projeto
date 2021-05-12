@@ -29,7 +29,8 @@ import { ProductReadComponent } from './components/product-read/product-read.com
 import { HomeComponent } from './views/home/home.component';
 import { ProductCreatComponent } from './components/product-creat/product-creat.component';
 // Observer
-import { HttpClientModule } from '@angular/common/http'
+import { HttpClientModule } from '@angular/common/http';
+import { ProductLeituraComponent } from './components/product-leitura/product-leitura.component'
 
 
 
@@ -40,7 +41,7 @@ import { HttpClientModule } from '@angular/common/http'
     HeaderComponent, 
     FooterComponent, 
     NavComponent, 
-    RedDirective, ForDirective, ProductReadComponent, HomeComponent, ProductCreatComponent
+    RedDirective, ForDirective, ProductReadComponent, HomeComponent, ProductCreatComponent, ProductLeituraComponent
   ],
   imports: [
     BrowserModule,
